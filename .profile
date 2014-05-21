@@ -8,13 +8,15 @@ alias tar='gnutar'
 alias ls='ls -G --color=auto'
 alias ll='ls -lG --color=auto'
 alias la='ls -lGa --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
 
 . $HOME/.colors.sh
 . $HOME/.git-prompt.sh
 . $HOME/.git-completion.sh
 
 export CLICOLOR=1
-export TERM="xterm-color"
+export TERM="xterm-256color"
 export GREP_OPTIONS='--color=auto -r'
 
 POINTER_CHAR="⬆"

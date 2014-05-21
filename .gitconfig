@@ -1,30 +1,17 @@
 [user]
-	name = Nate Brown
-	email = nbrown.us@gmail.com
-
+	email = mx.furman@gmail.com
+	name = max furman
 [color]
-	ui = true
-
+    ui = true
 [alias]
-	ci = !git commit -m
-	co = checkout
-	st = status -- .
-	ba = !git branch -avv
-	up = !git pull --rebase
-	rv = !git remote -v
-	hist = !git --no-pager log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -20
-	history = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	diffc = diff --cached
-
-[status]
-	submodulesummary = true
-
-[push]
-	default = current 
-
-[diff]
-	renames = true
-	noprefix = true
-
-[format]
-	pretty = fuller
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    plo = pull --rebase origin master
+    pl = pull --rebase
+    ps = push origin master
+    dif = diff --color
