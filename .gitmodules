@@ -1,3 +1,9 @@
 [submodule "/home/max/.vim"]
 	path = /home/max/.vim
 	url = git@github.com:dopey/dotvim.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = git@github.com:dopey/dotfiles.git
+[submodule "/home/max/.files"]
+	path = /home/max/.files
+	url = git@github.com:dopey/dotfiles.git
