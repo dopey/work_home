@@ -6,6 +6,8 @@ export CLICOLOR=1
 export TERM="xterm-256color"
 export GREP_OPTIONS='--color=auto -r'
 
+export EDITOR=vim
+export VISUAL=vim
 
 #########################
 # Aliases
