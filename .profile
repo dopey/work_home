@@ -58,5 +58,5 @@ then
 fi
 
 function psg {
-    ps jaux|head -1 && ps jaux|GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
+    ps jax|head -1 && ps jax|GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
 }
