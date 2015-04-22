@@ -60,3 +60,6 @@ fi
 function psg {
     ps jax|head -1 && ps jax|GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
 }
+function glog {
+    tail -f /var/log/syslog | GREP_OPTIONS= grep "$1";
+}
