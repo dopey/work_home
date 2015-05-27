@@ -49,13 +49,13 @@ function bt {
 
 
 # Predictable SSH authentication socket location.
-SOCK="/tmp/ssh-agent-$USER-tmux"
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
-then
-    rm -f /tmp/ssh-agent-$USER-screen
-    ln -sf $SSH_AUTH_SOCK $SOCK
-    export SSH_AUTH_SOCK=$SOCK
-fi
+#SOCK="/tmp/ssh-agent-$USER-tmux"
+#if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
+#then
+#    rm -f /tmp/ssh-agent-$USER-screen
+#    ln -sf $SSH_AUTH_SOCK $SOCK
+#    export SSH_AUTH_SOCK=$SOCK
+#fi
 
 function psg {
     ps jax|head -1 && ps jax|GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
