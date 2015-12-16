@@ -58,7 +58,7 @@ function bt {
 #fi
 
 function psg {
-    ps jax|head -1 && ps jax|GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
+    ps aux | head -1 && ps aux | GREP_OPTIONS= grep "$1" | GREP_OPTIONS= grep -v grep;
 }
 
 function glog {
