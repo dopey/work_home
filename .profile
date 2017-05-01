@@ -12,6 +12,8 @@ export VISUAL=vim
 #########################
 # Aliases
 #########################
+alias grp="/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
 alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -lGa'
@@ -39,6 +41,8 @@ export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
+
+export PATH="/home/max/.local/bin:$PATH"
 
 EDITOR=vim
 VISUAL=vim
