@@ -1,0 +1,18 @@
+#! /bin/bash
+
+set -o xtrace
+
+# --- fzf
+FZF="$(which fzf)"
+
+if [ $? -ne 0 ]; then
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+fi
+# ---
+
+git submodule init;
+git submodule update;
+
+cd .files; ./bootstrap.sh; cd ../;
+cd .vim; ./bootstrap.sh; cd ../;

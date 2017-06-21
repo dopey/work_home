@@ -4,3 +4,9 @@
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:dopey/dotvim.git
+[submodule ".profile.d"]
+	path = .profile.d
+	url = git@github.com:dopey/profile.d.git
+[submodule ".linux-profile.d"]
+	path = .linux-profile.d
+	url = git@github.com:dopey/linux-profile.d.git
