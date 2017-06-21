@@ -2,6 +2,14 @@
 
 set -o xtrace
 
+# --- ag
+AG="$(which ag)"
+
+if [ $? -ne 0 ]; then
+    sudo apt-get install "silversearcher-ag"
+fi
+# ---
+
 # --- fzf
 FZF="$(which fzf)"
 
